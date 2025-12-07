@@ -16,13 +16,26 @@
     header {
       background : #e76831;
       color: white;
-      padding: 20px;
+      padding: 0.4rem;
+      /* padding: 20px; */
       text-align: center;
+      font-size: large;
+      line-height: 1.4;
     }
 
-    header h1 {
+    /* header h1 {
       margin: 0;
       font-size: 2rem;
+    }
+     */
+
+    nav  {
+        padding: 2rem;
+    }
+
+    a {
+      color: #f8f6f5;
+      text-decoration: none;
     }
 
     main {
@@ -32,6 +45,27 @@
       background: white;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .navigation {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.75em;
+      line-height: 1.4;
+    }
+    
+    .box {
+      background: #b65f3a;
+      padding: 0.5rem 0.25;
+      border-radius: 5px;
+      font-size: .5em;
+      line-height: 1.4;
+    }
+
+    .title {
+        color: black;
+        font-style: bold;
+        text-align: center;
     }
 
     section {
@@ -64,9 +98,34 @@
 </head>
 <body>
   <header>
+    <a href="index.html"><h1>AppTrack College Solutions<h1></a>
+    <nav>
+    <div class="navigation">
+    <a href="index.html" class="box">
+        <h3>Home</h3>
+      </a>
+      <a href="about-us.html" class="box">
+        <h3>About Us</h3>
+      </a>
+      <a href="app-guide.html" class="box">
+        <h3>Application Guide</h3>
+      </a>
+        <a href="meet-with-us.html" class="box"><h3>Schedule a Meeting</h3>
+      </a>
+      <a href="tracker-tool.html" class="box">
+        <h3>Tracker Tool</h3>
+      </a>
+    </nav>
+    <div class="title">
+    Application Guide
+    </div>
+  </header>
+  <!-- 
+  <section id="meeting_info">
+  <header>
     <h1>📘 Application Guide</h1>
     <p>This Page Will Give You The Right Steps ;)</p>
-  </header>
+  </header> -->
 
 <main>
     <section>
