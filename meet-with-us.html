@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet With Us</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      margin: 0;
+      line-height: 1.4;
+    }
 
+    header {
+      background: #e76831;
+      color: #f7f4f3;
+      padding: 0.4rem;
+      text-align: center;
+      font-size: large;
+    }
+
+    a {
+      color: #f8f6f5;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .title {
+        color: black;
+        font-style: bold;
+        text-align: center;
+    }
+
+    nav  {
+        padding: 2rem;
+    }
+
+    .navigation {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 0.75em;
+    }
+    
+    .box {
+      background: #b65f3a;
+      padding: 0.5rem 0.25;
+      border-radius: 5px;
+      font-size: .5em
+    }
+
+    .workshops {
+      background: #e76831;
+      padding: 2rem;
+      border-radius: 5px;
+    }
+
+    .consultations {
+      background: #e76831;
+      padding: 2rem;
+      border-radius: 5px;
+    }
+
+    .workshops ul {
+        color: blanchedalmond;
+        font-size: 1.25em;
+    }
+
+    h2 {
+        text-align: center;
+        background-color: #e6ad95;
+    }
+    
+    .testimonial {
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <a href="index.html"><h1>AppTrack College Solutions<h1></a>
+    <nav>
+    <div class="navigation">
+    <a href="index.html" class="box">
+        <h3>Home</h3>
+      </a>
+      <a href="about-us.html" class="box">
+        <h3>About Us</h3>
+      </a>
+      <a href="app-guide.html" class="box">
+        <h3>Application Guide</h3>
+      </a>
+        <a href="meet-with-us.html" class="box"><h3>Schedule a Meeting</h3>
+      </a>
+      <a href="tracker-tool.html" class="box">
+        <h3>Tracker Tool</h3>
+      </a>
+    </nav>
+    <div class="title">
+    Meet With Us
+    </div>
+  </header>
+
+  <section id="workshops">
+    <h2>Upcoming Webinars</h2>
+    <div class="workshops">
+      <div>
+        <ul><li>Transitioning Into College Life w/ Samuel Hall<br>
+        Tuesday, December 16th at 3pm</li><br>
+        <li>Time Management w/ Carlos Zaragoza-Valdez<br>
+        Wednesday, January 7th at 4pm</li><br>
+        <li>Acing Your Entrance Exam w/ Zachary Davis<br>
+        Friday, January 9th at 11am</li>
+        </ul>
+      </div></div>
+    <h2>Webinar Sign-Up</h2>
+      <div class="workshops">
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <label for="Name">Full Name:</label>
+        <input type="text" name="Name" id="Name" placeholder="Enter your name"><br>
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" id="Email" placeholder="Enter your email"><br><br>
+<strong>Which webinar would you like to sign-up for?</strong><br>
+<input type="radio" name="Webinar" id="Webinar" value="Transitioning Into College Life w/ Samuel Hall"> Transitioning Into College Life w/ Samuel Hall<br>
+<input type="radio" name="Webinar" id="Webinar" value="Time Management w/ Carlos Zaragoza-Valdez"> Time Management w/ Carlos Zaragoza-Valdez<br>
+<input type="radio" name="Webinar" id="Webinar" value="Acing Your Entrance Exam w/ Zachary Davis"> Acing Your Entrance Exam w/ Zachary Davis<br><br>
+<strong>Are you a Parent or Student?</strong><br>
+<input type="radio" name="Status" id="Status" value="Parent"> Parent<br>
+<input type="radio" name="Status" id="Status" value="Student"> Student<br><br>
+<strong>Ask a question to be answered on the webinar:</strong><br>
+<textarea name="Question" id="Question" cols="60" rows="3" placeholder="What question do you want answered by our experts?"></textarea><br>
+<input type="submit" id="submit" value="Submit">
+<input type="reset">
+</form></div>
+    <h2>Consultations</h2>
+
+        </section>
+</body>
+</html>
