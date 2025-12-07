@@ -65,7 +65,7 @@
     }
 
     .workshops {
-      background: #e76831;
+      background: #e48314;;
       padding: 2rem;
       border-radius: 5px;
     }
@@ -77,8 +77,8 @@
     }
 
     .workshops ul {
-        color: rgb(244, 250, 250);
-        font-size: 1.15em;
+        color: black;
+        font-size: 1.28em;
     }
 
     h2 {
@@ -134,44 +134,44 @@
       <div class="workshops">
         <form method="post" action="https://webdevbasics.net/scripts/demo.php">
         <label for="Name">Full Name:</label>
-        <input type="text" name="Name" id="Name" placeholder="Enter your name"><br>
+        <input type="text" name="Name" id="Name" placeholder="Enter your name" required><br>
         <label for="Email">Email:</label>
-        <input type="email" name="Email" id="Email" placeholder="Enter your email"><br><br>
+        <input type="email" name="Email" id="Email" placeholder="Enter your email" required><br><br>
         <strong>Which webinar would you like to sign-up for?</strong><br>
-        <input type="radio" name="Webinar" id="Webinar" value="Transitioning Into College Life w/ Samuel Hall"> Transitioning Into College Life w/ Samuel Hall<br>
+        <input type="radio" name="Webinar" id="Webinar" value="Transitioning Into College Life w/ Samuel Hall" required> Transitioning Into College Life w/ Samuel Hall<br>
         <input type="radio" name="Webinar" id="Webinar" value="Time Management w/ Carlos Zaragoza-Valdez"> Time Management w/ Carlos Zaragoza-Valdez<br>
         <input type="radio" name="Webinar" id="Webinar" value="Acing Your Entrance Exam w/ Zachary Davis"> Acing Your Entrance Exam w/ Zachary Davis<br><br>
         <strong>Are you a Parent or Student?</strong><br>
-        <input type="radio" name="Status" id="Status" value="Parent"> Parent<br>
+        <input type="radio" name="Status" id="Status" value="Parent" required> Parent<br>
         <input type="radio" name="Status" id="Status" value="Student"> Student<br><br>
         <strong>Ask a question to be answered on the webinar:</strong><br>
-        <textarea name="Question" id="Question" cols="60" rows="3" placeholder="What question do you want answered by our experts?"></textarea><br>
+        <textarea name="Question" id="Question" cols="60" rows="3" placeholder="What question do you want answered by our experts?" required></textarea><br>
         <input type="submit" id="submit" value="Submit">
         <input type="reset"> 
         </form></div></div>
     <h2>Consultations</h2>
     <div class="workshops">
-<p>AppTrack offers world-class, one-on-one consultation services for every step of the College Application process.
+<p style="font-size: 1.2em;">AppTrack offers world-class, one-on-one consultation services for every step of the College Application process.
   Please fill out our interest form and one of our representatives will reach out to you!</p>
         </div>
     <h2>Consultation Sign-Up</h2>
     <div class="workshops">
         <form method="post" action="https://webdevbasics.net/scripts/demo.php">
         <label for="Name">Full Name:</label>
-        <input type="text" name="Name" id="Name" placeholder="Enter your name"><br>
+        <input type="text" name="Name" id="Name" placeholder="Enter your name" required><br>
         <label for="Email">Email:</label>
-        <input type="email" name="Email" id="Email" placeholder="Enter your email"><br><br>
+        <input type="email" name="Email" id="Email" placeholder="Enter your email" required><br><br>
         <strong>Are you a Parent or Student?</strong><br>
-        <input type="radio" name="Status" id="Status" value="Parent"> Parent<br>
+        <input type="radio" name="Status" id="Status" value="Parent" required> Parent<br>
         <input type="radio" name="Status" id="Status" value="Student"> Student<br><br>
         <strong>What year of school is the student?</strong><br>
-        <input type="radio" name="Year" id="Year" value="Pre-High School"> Pre-High School<br>
+        <input type="radio" name="Year" id="Year" value="Pre-High School" required> Pre-High School<br>
         <input type="radio" name="Year" id="Year" value="High School - Freshman/Sophomore"> High School - Freshman/Sophomore<br>
         <input type="radio" name="Year" id="Year" value="High School - Junior/Senior"> High School - Junior/Senior<br>
         <input type="radio" name="Year" id="Year" value="High School Graduate"> High School Graduate<br>
         <input type="radio" name="Year" id="Year" value="Current College Student"> Current College Student<br><br>
-        <strong>Ask a question to be answered on the webinar:</strong><br>
-        <textarea name="Question" id="Question" cols="60" rows="3" placeholder="What question do you want answered by our experts?"></textarea><br>
+        <strong>Please provide a brief overview of the services you would like us to provide.</strong><br>
+        <textarea name="ServicesRequested" id="ServicesRequested" cols="60" rows="3" placeholder="What can we do for you?" required></textarea><br>
         <input type="submit" id="submit" value="Submit">
         <input type="reset"> 
         </form></div></div>
